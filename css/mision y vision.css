@@ -1,0 +1,231 @@
+/* Estilos generales para todas las pantallas */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* Sección de inicio */
+.holaentre {
+    height: 100vh;
+    background-image: url('../images/entrenador1.jpg');
+    background-size: cover;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar contenido verticalmente */
+    align-items: center; /* Alinear contenido al centro */
+    text-align: center; /* Alinear texto al centro */
+    position: relative;
+}
+
+.holaentre h1 {
+    font-size: 60px; 
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    color: #ffffff;
+    text-align: center; /* Alinear texto al centro */
+}
+
+.holaentre p {
+    color: #ffffff;
+    text-align: center; /* Alinear texto al centro */
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px; 
+    max-width: 800px; /* Limitar el ancho para mejor legibilidad */
+    margin-top: 20px; /* Añadir espacio entre el título y el párrafo */
+}
+
+.holaentre h1 span {
+    color: #F43E0A;
+}
+
+.holaentre .container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center; /* Centrar contenido verticalmente */
+    align-items: center; /* Alinear contenido al centro */
+}
+
+/* Estilos para la sección de entrenador */
+.entrenador .content {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.entrenador .content .box {
+    flex: 1 1 100%; 
+    max-width: 100%; 
+    padding: 15px;
+}
+
+.entrenador .content .text {
+    text-align: center;
+}
+
+.entrenador .content .text h2 {
+    font-size: 1.8rem;
+    color: #F43E0A;
+}
+
+.entrenador .content .text p {
+    font-size: 1rem;
+    color: black;
+    font-family: 'Open-sans', sans-serif;
+    text-align: justify;
+}
+
+.entrenador .content .text .parrafo2 {
+    color: black;
+}
+
+.entrenador-info {
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.entrenador-info h2, .entrenador-info p {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Franja negra entre secciones */
+.seccion-separador {
+    height: 50px; /* Ajusta la altura según tus necesidades */
+    background-color: black;
+}
+
+/* Imagenes pequeñas */
+.small-img {
+    width: 100%; 
+    height: auto;
+}
+
+.entrenador .container .box .li1 {
+    flex: 1 1 100%; 
+    max-width: 100%; 
+    padding: 25px;
+}
+
+/* Estilos para el logo y el contenedor del logo */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    height: auto; /* Ajuste la altura automáticamente según el contenido */
+}
+
+header .container img {
+    max-width: 100px; /* Ajusta el tamaño del logo */
+    height: auto;
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+}
+
+/* Media Queries */
+
+/* Pantallas mayores a 1080px */
+@media (min-width: 1081px) {
+    .holaentre h1 {
+        font-size: 60px; 
+    }
+
+    .holaentre p {
+        font-size: 20px;
+    }
+
+    .entrenador .content .box {
+        flex: 0 0 50%; 
+        max-width: 50%;
+    }
+
+    header .container img {
+        max-width: 150px; /* Ajusta el tamaño del logo */
+    }
+}
+
+/* Laptop (1024px a 1080px) */
+@media (max-width: 1080px) and (min-width: 1024px) {
+    .holaentre h1 {
+        font-size: 50px;
+    }
+
+    .holaentre p {
+        font-size: 18px; 
+    }
+
+    .entrenador .content .box {
+        flex: 0 0 50%; 
+        max-width: 50%;
+    }
+
+    header .container img {
+        max-width: 150px; /* Ajusta el tamaño del logo */
+         margin: 0px 10px 0px 0px;
+    }
+}
+
+/* Tablet (768px a 1024px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .holaentre {
+        height: auto; /* Ajuste para pantallas pequeñas */
+        min-height: 400px;
+        padding: 20px;
+    }
+    
+    .holaentre h1 {
+        font-size: 40px; 
+    }
+
+    .holaentre p {
+        font-size: 16px; 
+    }
+
+    .entrenador .content .box {
+        flex: 0 0 100%; 
+        max-width: 100%;
+    }
+
+    header .container img {
+        max-width: 120px; /* Ajusta el tamaño del logo */
+        margin: 0px 10px 0px 0px;
+    }
+}
+
+/* Teléfono móvil (menos de 768px) */
+@media (max-width: 767px) {
+    .holaentre {
+        height: auto; /* Ajuste para pantallas pequeñas */
+        min-height: 400px;
+        padding: 20px;
+    }
+
+    .holaentre h1 {
+        font-size: 30px;
+    }
+
+    .holaentre p {
+        font-size: 14px; 
+    }
+
+    .entrenador .content .box {
+        flex: 0 0 100%; 
+        max-width: 100%;
+    }
+
+    .entrenador .content .text {
+        order: 1; 
+    }
+
+    .entrenador .content .form {
+        order: 2; 
+    }
+
+    header .container img {
+        max-width: 100px; /* Ajusta el tamaño del logo */
+        margin: 0px 10px 0px 0px;
+    }
+}

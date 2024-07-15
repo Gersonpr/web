@@ -1,0 +1,1 @@
+<footer class="main">Copyright &copy; 2020 <strong> Amazing| GYM </strong></footer>
